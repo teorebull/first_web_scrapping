@@ -14,11 +14,7 @@ while first_page_url == "https://books.toscrape.com/":
     # print(soup.prettify())
 
     # Due to multiple pages, we will update a new url for each page
-    rows = soup.find_all('ol', class_ = 'row')
     books = soup.find_all('li', class_ = 'col-xs-6 col-sm-4 col-md-3 col-lg-3')
-    articles = soup.find_all('article', class_ = 'product_pod')
-    images = soup.find_all('div', class_ = 'image_container')
-    rating_three = soup.find_all('p', class_ = 'star-rating Three')
 
 
     titles = []
@@ -68,11 +64,7 @@ for i in range(2, 51):
     # print(soup.prettify())
 
     # Due to multiple pages, we will update a new url for each page
-    rows = soup.find_all('ol', class_ = 'row')
     books = soup.find_all('li', class_ = 'col-xs-6 col-sm-4 col-md-3 col-lg-3')
-    articles = soup.find_all('article', class_ = 'product_pod')
-    images = soup.find_all('div', class_ = 'image_container')
-    rating_three = soup.find_all('p', class_ = 'star-rating Three')
 
     for book in books:
             # print(book)
