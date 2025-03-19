@@ -106,4 +106,4 @@ for i in range(2, 51):
 df = pd.DataFrame({'title': titles, 'price': prices, 'in_stock': in_stock, 'star_rating': star_rating})
 print(df)
 
-df.to_csv('book_data.csv')
+df.to_csv('book_data.csv', index=False)
